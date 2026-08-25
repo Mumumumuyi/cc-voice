@@ -1,0 +1,20 @@
+# 注意：.gitignore 不支持行尾注释，`config.json  # 说明` 会被当成完整模式而失效。
+# 注释一律独占一行。
+
+# 项目内 Python 环境（113MB）。克隆后用 uv 重建，见 README 的「从零安装」。
+.venv/
+
+# ASR 模型（约 487MB）。太大不入库，用 tools/fetch_models.ps1 重新下载。
+models/
+
+# 运行时产物
+logs/
+sessions/
+
+# 本机个人设置：悬浮岛坐标、麦克风选择、触发键等。
+# 缺失时 daemon/config.py 会用内置默认值，克隆后可直接跑。
+config.json
+
+__pycache__/
+*.pyc
+tools/_debug/

@@ -1,0 +1,6 @@
+{
+  "name": "cc-voice",
+  "version": "0.1.0",
+  "description": "中文语音输入：按住触发键说话，松开自动上屏到 Claude Code 终端。本地离线识别（FunASR-Nano / SenseVoice），带乳白悬浮反馈与可视化管理面板。",
+  "author": { "name": "Amu" }
+}
