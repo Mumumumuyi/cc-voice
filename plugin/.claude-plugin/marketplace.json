@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc-voice-local",
+  "description": "本机语音输入插件市场",
+  "owner": { "name": "Amu" },
+  "plugins": [
+    {
+      "name": "cc-voice",
+      "description": "中文语音输入：按住触发键说话，松开自动上屏到 Claude Code 终端。本地离线识别，带乳白悬浮反馈与可视化管理面板。",
+      "author": { "name": "Amu" },
+      "category": "productivity",
+      "source": "./plugins/cc-voice"
+    }
+  ]
+}

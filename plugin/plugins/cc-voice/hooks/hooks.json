@@ -1,0 +1,17 @@
+{
+  "description": "cc-voice：会话启动时登记本终端的进程链，并确保语音守护进程在运行",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.ps1\"",
+            "timeout": 25,
+            "statusMessage": "启动语音输入…"
+          }
+        ]
+      }
+    ]
+  }
+}
